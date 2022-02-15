@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepositoriesTableViewCell" rowHeight="111" id="KGk-i7-Jjw" customClass="RepositoriesTableViewCell" customModule="AppleRepositories" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swift-corelibs-foundation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPb-wa-tAB" userLabel="repositoryNameLabel">
+                        <rect key="frame" x="15" y="5" width="370" height="34.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" systemColor="systemBlueColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="The Foundation Project, providing core utilities, internationalization, and OS independence" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="723-jJ-1jo" userLabel="repositoryDescriptionLabel">
+                        <rect key="frame" x="15" y="44.5" width="370" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="2015-11-09" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPe-pz-DaG" userLabel="repositoryDateLabel">
+                        <rect key="frame" x="15" y="98" width="75" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sp1-vV-573" userLabel="starsStack">
+                        <rect key="frame" x="322.5" y="96" width="57.5" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1955" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ce-cQ-UNr" userLabel="repositoryStarsLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="32.5" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZFt-Da-5iu">
+                                <rect key="frame" x="37.5" y="-0.5" width="20" height="20"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="mLr-uj-VE7"/>
+                                    <constraint firstAttribute="width" constant="20" id="xtn-xD-RSx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Sp1-vV-573" secondAttribute="trailing" id="0LN-yh-Fsy"/>
+                    <constraint firstAttribute="trailing" secondItem="723-jJ-1jo" secondAttribute="trailing" constant="15" id="2DP-3m-L6g"/>
+                    <constraint firstAttribute="bottom" secondItem="HPe-pz-DaG" secondAttribute="bottom" constant="10" id="3bB-Yg-7EG"/>
+                    <constraint firstItem="723-jJ-1jo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9WO-Ef-syR"/>
+                    <constraint firstItem="MPb-wa-tAB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="B0x-a2-J4f"/>
+                    <constraint firstItem="723-jJ-1jo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Hu0-DQ-pwy"/>
+                    <constraint firstItem="723-jJ-1jo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Tok-U7-PrY"/>
+                    <constraint firstAttribute="trailing" secondItem="MPb-wa-tAB" secondAttribute="trailing" constant="15" id="Z1z-5F-ToM"/>
+                    <constraint firstItem="723-jJ-1jo" firstAttribute="top" secondItem="MPb-wa-tAB" secondAttribute="bottom" constant="5" id="cAI-3B-6hH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Sp1-vV-573" secondAttribute="bottom" constant="-2" id="cqu-qj-dpB"/>
+                    <constraint firstItem="MPb-wa-tAB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="g63-Xz-oTm"/>
+                    <constraint firstItem="HPe-pz-DaG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="pD1-AK-IRX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="repositoryDate" destination="HPe-pz-DaG" id="kGl-pn-DHj"/>
+                <outlet property="repositoryDescription" destination="723-jJ-1jo" id="jaL-lA-bpt"/>
+                <outlet property="repositoryName" destination="MPb-wa-tAB" id="brr-Cv-5NV"/>
+                <outlet property="repositoryStars" destination="8ce-cQ-UNr" id="vie-Q3-pcg"/>
+            </connections>
+            <point key="canvasLocation" x="63.768115942028992" y="148.32589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
